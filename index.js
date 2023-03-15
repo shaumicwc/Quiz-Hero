@@ -185,7 +185,9 @@ document.querySelector("#submit").addEventListener("click", () => {
 });
 
 
-//blog page location//
-document.getElementById('blog-btn').addEventListener('click', function () {
-  window.location = 'blog.html';
+
+
+// blog html
+document.getElementById("blog-btn").addEventListener("click", function () { 
+  window.location.href = 'blog.html';
 })
