@@ -49,22 +49,21 @@
             <div>
                 <p class="text-2xl font-bold m-4">Question: 2</p>
                 <p class="text-2xl italic font-medium text-red-700">
-                    How will you select HTML elements using DOM? Name the DOM methods.</p>
+                    What is the difference between Local Storage, Section Storage, Cookies?</p>
 
                 <p class=" text-xl font-bold  py-2 underline underline-offset-8">Answer:</p>
-                <p>There are some methods to select HTML elements using DOM. With those Methods, I would select HTML
-                    elements. Some frequently used methods are given below:</p>
+                <p> Differences are given bellow: </p>
                 <br>
-                <p class="font-medium">The single-element selectors are:</p>
-                <ul>
-                    <li>getElementById()</li>
-                    <li>querySelector()</li>
-                </ul>
-                <p class="font-medium">The multiple elements selectors are:</p>
-                <ol>
-                    <li>getElementsByTagName()</li>
-                    <li>getElementsByClassName()</li>
-                    <li>querySelectorAll()</li>
+                <li class="text-xl font-semibold">Storage Limit
+                </li>
+                <p>Local Storage stores up to 10 megabytes and Session storage stores up to 5 megabytes. On the other hand, these provide a very restrictive and small storage capacity of 4 kilobytes for Cookies.</p>
+                <br>
+                <li class="text-xl font-semibold">Accessibility</li>
+                <p>If we talk about it, since session storage is tied to the particular session and each tab has its session, data is only available in the current tab in which we’ve set the session storage data. Lastly, cookies are somewhat similar to local storage as they are accessible from any window or tab. It could also be accessed on the server</p>
+                <br>
+                <li class="text-xl font-semibold">Expiration</li>
+                <p>Session storage stores data only for a session, meaning that the data is stored until the browser (or tab) is closed, for Local Storage it have to delete manually and for cookies can be updated , set using document.cookie object from browser window object.</p>
+                
                 </ol>
             </div>
             <!-- --------------Ques-3---------------- -->
@@ -72,25 +71,14 @@
             <div>
                 <p class="text-2xl font-bold m-4">Question: 3</p>
                 <p class="text-2xl italic font-medium text-red-700">
-                    What is event bubble? </p>
+                    What is event loop? How does it work?  </p>
                 <p class="font-bold text-xl py-2 underline underline-offset-8">Answer :</p>
                 <p>Definition: <br>
-                    When an element receives an event, and that event is transmitted to its parent elements in the DOM
-                    tree until it gets to the root element. This concept is called event bubble. </p>
+                    The event loop is the secret behind JavaScript’s asynchronous programming. JS executes all operations on a single thread, but using a few smart data structures,it gives us the illusion of multi-threading </p> <br>
+                    <p>Working method:</p>
+                    <p>The event loop is a process that waits for the Call Stack to be clear before pushing callbacks from the Task Queue to the Call Stack. Once the Stack is clear, the event loop triggers and checks the Task Queue for available callbacks. If there are any, it pushes it to the Call Stack, waits for the Call Stack to be clear again, and repeats the same process.</p>
             </div>
-            <br>
-            <!-- ---------------------Ques-4----------------- -->
-            <div>
-                <p class="text-2xl font-bold m-4">Question: 4</p>
-                <p class="text-2xl italic font-medium text-red-700">
-                    What is a callback function and why will you use it? </p>
-                <p class="text-xl font-bold  py-2 underline underline-offset-8">Answer:</p>
-                <p>When a function is sent as an argument then it executes after the main function has been executed
-                    it’s called a Callback Function. The callback function is very useful for its efficiency. Callback
-                    Functions give a way to you to set up your program in such a way that events will trigger the
-                    correct code. It’s very common in programs with GUIs where users can click on any element on the UI
-                    and the appropriate code will be run.</p>
-            </div>
+            
         </section>
         <!-- ----------------Q&A Section end------------ -->
     </main>
