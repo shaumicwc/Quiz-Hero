@@ -184,9 +184,6 @@ document.querySelector("#submit").addEventListener("click", () => {
   window.scrollTo(0, 0);
 });
 
-
-
-
 // blog html
 document.getElementById("blog-btn").addEventListener("click", function () {
   window.location.href = 'blog.html';
